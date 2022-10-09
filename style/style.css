@@ -96,6 +96,9 @@ main{
     text-align: justify;
 
     margin-bottom: 1.4rem;
+
+    list-style-position: inside;
+    list-style-image: url(../assets/square.png);
     
 }
 
@@ -116,6 +119,9 @@ main{
     text-align: justify;
 
     margin-bottom: 2.5rem;
+
+    list-style-position: inside;
+    list-style-image: url(../assets/square-color.png);
 }
 
 .instructions cite{
