@@ -17,6 +17,8 @@ body{
 
     border: 2px solid red; /* LINHA GUIA, APAGAR DEPOIS */
 
+    counter-reset: list-number;
+
 }
 
 header{
@@ -44,6 +46,11 @@ header p{
     margin-top: 1.0rem;
     margin-bottom: 5.0rem;
 
+}
+
+header p::before{
+    content: url(../assets/6dots.svg);
+    margin-left:
 }
 
 main{
@@ -111,7 +118,8 @@ main{
     margin-bottom: 2.5rem;
 }
 
-.instructions ol li{
+.instructions p{
+    
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.5rem;
@@ -121,7 +129,24 @@ main{
     margin-bottom: 2.5rem;
 
     list-style-position: inside;
-    list-style-image: url(../assets/square-color.png);
+}
+
+.instructions p::before{
+    counter-increment: list-number;
+    content:counter(list-number);
+
+    font-family: 'Playfair Display', serif;
+    margin-right: 1rem;
+    width:35px;
+    height:35px;
+    display:inline-flex;
+    text-align: center;
+    justify-content: center;
+    font-size:2.0rem;
+    background-color:#F2994A;
+    border-radius:10%;
+    color:#fff;
+
 }
 
 .instructions cite{
