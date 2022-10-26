@@ -1,0 +1,217 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    
+}
+
+body{
+    max-width: 1440px;
+    height: auto;
+
+    justify-content: center;
+    margin: 0 auto;
+
+    font-size: 1.6rem;
+
+    border: 2px solid red; /* LINHA GUIA, APAGAR DEPOIS */
+
+    counter-reset: list-number;
+
+}
+
+header{
+    width: 100%;
+    margin-top: 5.0rem;
+}
+
+header h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+}
+
+
+.subtext{
+    display: flex;
+    text-align: center;
+    gap: 15px;
+}
+.subtext img{
+    position: relative;
+    top: 8px;
+    width: 15px;
+}
+.subtext p{
+    width:41%;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: justify;
+    color: #4F4F4F;
+
+    margin-top: 1.0rem;
+    margin-bottom: 5.0rem;
+
+}
+
+main{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+        
+}
+
+.main-image img{
+    width: 969px;
+    height: 470px;
+    border-radius: 12px;
+    
+    margin-bottom: 5.0rem;
+}
+
+.ingredients{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.ingredients h2,
+.instructions h2{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+
+}
+
+.ingredients h3{
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+
+    margin-top: 3.2rem;
+    margin-bottom: 3.0rem;
+}
+
+.ingredients ul li{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: #333333;
+    text-align: justify;
+
+    margin-bottom: 1.4rem;
+
+    list-style-position: inside;
+    list-style-image: url(../assets/square.png);
+    
+}
+
+.instructions{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.instructions h2{
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.step-item p{
+    
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: #333333;
+    text-align: justify;
+
+    margin-bottom: 4rem;
+}
+
+.step-item{
+    display:flex;
+    
+}
+
+.number{
+    display: inline-block;
+    flex-shrink: 0;
+    font-family: 'Playfair Display', serif;
+    margin-right: 10px;
+    width:35px;
+    height:35px;
+    text-align: center;
+    font-size:2.0rem;
+    background-color:#F2994A;
+    border-radius:10%;
+    color:#fff;
+
+}
+
+.instructions cite{
+    color: #BDBDBD;
+}
+
+aside{
+    width: 216px;
+    height: 367px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3.5rem;
+    padding-bottom: 5rem ;
+    
+}
+
+.aside-box{
+    display: flex;
+    margin-top: 5rem;
+    gap: .5rem;
+    align-items: center;
+}
+
+.aside-items .title{
+    margin-bottom: .5rem;
+
+}
+
+.aside-box .servings{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+.aside-box .title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+
+footer{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+
+    margin-top: 9rem;
+}
