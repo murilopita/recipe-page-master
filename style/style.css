@@ -4,6 +4,7 @@
 html{
     font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
+    
 }
 
 body{
@@ -33,7 +34,18 @@ header h1{
     line-height: 6.4rem;
 }
 
-header p{
+
+.subtext{
+    display: flex;
+    text-align: center;
+    gap: 15px;
+}
+.subtext img{
+    position: relative;
+    top: 8px;
+    width: 15px;
+}
+.subtext p{
     width:41%;
     font-family: 'Montserrat';
     font-style: italic;
@@ -48,17 +60,11 @@ header p{
 
 }
 
-header p::before{
-    content: url(../assets/6dots.svg);
-    
-}
-
 main{
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 5rem;
-    grid-row-gap: 0px;
         
 }
 
@@ -118,7 +124,7 @@ main{
     margin-bottom: 2.5rem;
 }
 
-.instructions p{
+.step-item p{
     
     font-weight: 400;
     font-size: 1.6rem;
@@ -126,22 +132,22 @@ main{
     color: #333333;
     text-align: justify;
 
-    margin-bottom: 2.5rem;
-
-    list-style-position: inside;
+    margin-bottom: 4rem;
 }
 
-.instructions p::before{
-    counter-increment: list-number;
-    content:counter(list-number);
+.step-item{
+    display:flex;
+    
+}
 
+.number{
+    display: inline-block;
+    flex-shrink: 0;
     font-family: 'Playfair Display', serif;
-    margin-right: 1rem;
+    margin-right: 10px;
     width:35px;
     height:35px;
-    display:inline-flex;
     text-align: center;
-    justify-content: center;
     font-size:2.0rem;
     background-color:#F2994A;
     border-radius:10%;
